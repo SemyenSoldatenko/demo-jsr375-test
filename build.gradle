@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.glassfish.jersey.core:jersey-client:2.23.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.2'
+    compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.9.2'
+
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+
+    testCompile 'junit:junit:4.12'
+}
+
